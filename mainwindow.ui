@@ -62,6 +62,9 @@
     </property>
     <addaction name="AutoEnter"/>
     <addaction name="ShouLIne"/>
+    <addaction name="FontFormat"/>
+    <addaction name="FontColor"/>
+    <addaction name="FontBackground"/>
    </widget>
    <widget class="QMenu" name="menu_V">
     <property name="title">
@@ -69,10 +72,7 @@
     </property>
     <addaction name="ToolBar"/>
     <addaction name="StatusBar"/>
-    <addaction name="FontFormat"/>
     <addaction name="separator"/>
-    <addaction name="FontColor"/>
-    <addaction name="FontBackground"/>
    </widget>
    <widget class="QMenu" name="menu_H">
     <property name="title">
@@ -111,6 +111,7 @@
    <addaction name="replace"/>
    <addaction name="separator"/>
    <addaction name="FontFormat"/>
+   <addaction name="FontColor"/>
    <addaction name="ToolBar"/>
    <addaction name="StatusBar"/>
   </widget>
@@ -145,6 +146,9 @@
    </property>
    <property name="text">
     <string>保存</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
    </property>
    <property name="menuRole">
     <enum>QAction::MenuRole::NoRole</enum>
@@ -259,24 +263,10 @@
     <enum>QAction::MenuRole::NoRole</enum>
    </property>
   </action>
-  <action name="All">
-   <property name="icon">
-    <iconset theme="QIcon::ThemeIcon::EditSelectAll"/>
-   </property>
-   <property name="text">
-    <string>全选</string>
-   </property>
-   <property name="toolTip">
-    <string>全选</string>
-   </property>
-   <property name="shortcut">
-    <string>Ctrl+A</string>
-   </property>
-   <property name="menuRole">
-    <enum>QAction::MenuRole::NoRole</enum>
-   </property>
-  </action>
   <action name="AutoEnter">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::ObjectRotateRight"/>
+   </property>
    <property name="text">
     <string>自动换行</string>
    </property>
@@ -304,6 +294,9 @@
    </property>
   </action>
   <action name="FontColor">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::WeatherClear"/>
+   </property>
    <property name="text">
     <string>字体颜色</string>
    </property>
@@ -350,6 +343,37 @@
    </property>
    <property name="menuRole">
     <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="All">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::EditSelectAll"/>
+   </property>
+   <property name="text">
+    <string>全选</string>
+   </property>
+   <property name="toolTip">
+    <string>全选</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::EditClear"/>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="toolTip">
+    <string>退出</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::QuitRole</enum>
    </property>
   </action>
  </widget>
